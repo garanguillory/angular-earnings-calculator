@@ -1,0 +1,69 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+	1). universal
+	2). navbar
+	3). posts
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ------ universal ------- */
+
+	html{
+		font:16px;
+	}
+
+	ul {
+		padding-left: 0;
+	}
+
+	li {
+		list-style: none;
+	}
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: #1EAEDB;
+	}
+
+	.ng-cloak {
+		display: none;
+	}
+	
+	.centered {
+		text-align: center;
+	}
+
+	#reset {
+		background: rgb(251,73,72);
+		border: none;
+		color: white;
+	}
+
+	#reset:hover {
+		background: rgb(226, 48, 47);
+	}
+
+/* ------ earnings display ------- */
+
+	.earnings-header {
+		margin: 0 auto;
+	}
+
+	.earnings-options li {
+		display: inline-block;
+		margin-right: 1.5rem;
+	}
+
+
+
+
+
+
+
+
+
+

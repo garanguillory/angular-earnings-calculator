@@ -1,0 +1,20 @@
+
+
+<div class="container">
+	<div class="row">
+		<div class="eight columns offset-by-two ng-cloak">
+			<h3>Overview for Meal {{mealCount + 1 }}</h3>
+			
+			<h5>Subtotal: {{mealArray[mealCount].price * (1 + (mealArray[mealCount].taxrate / 100)) | currency}}</h5>
+			<h5>Tip: {{mealArray[mealCount].price * (mealArray[mealCount].tippercentage / 100) | currency}}</h5>
+			<hr>
+			<h5>Total: {{ (mealArray[mealCount].price * (mealArray[mealCount].tippercentage / 100)) + (mealArray[mealCount].price * (1 + (mealArray[mealCount].taxrate / 100))) | currency}}</h5>
+			
+			<div class="ten columns offset-by-one">
+				<input class="button" type="button" value="Previous Meal" ng-click="previousMeal()">
+				<input class="button" type="button" value="Next Meal" ng-click="nextMeal()">
+			</div>
+
+		</div>
+	</div>
+</div>

@@ -1,0 +1,24 @@
+
+
+<div class="container">
+	<form ng-submit="newMeal()" novalidate>
+		<div class="row">
+			<div class="four columns offset-by-four">
+				<label for="mealprice">Base Meal Price</label>
+				<input class="u-full-width" type="number" placeholder="$0.00" id="mealprice" ng-model="meal.price" required>
+			</div>
+			<div class="four columns offset-by-four">
+				<label for="taxrate">Tax Rate %</label>
+				<input class="u-full-width" type="number" placeholder="%0.00" id="taxrate" ng-model="meal.taxrate" required>
+			</div>
+			<div class="four columns offset-by-four">
+				<label for="tippercentage">Tip Percentage %</label>
+				<input class="u-full-width" type="number" placeholder="%0.00" id="tippercentage" ng-model="meal.tippercentage" required>
+			</div>
+		</div>
+		<div class="four columns offset-by-four">
+			<input class="button-primary u-full-width" type="submit" value="Add Meal">
+			<input class="button u-full-width" type="button" value="Cancel" ng-click="cancel()">
+		</div>
+	</form>
+</div>
